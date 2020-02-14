@@ -1,0 +1,43 @@
+{
+  "name": "vanilla-ssr-csr",
+  "version": "0.0.0",
+  "scripts": {
+    "release": "./node_modules/.bin/release-it --no-npm.publish --git.tagName='v${version}' --github.release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/org-rondon/vanilla-ssr-csr.git"
+  },
+  "author": "Hemerson Vianna <hemerson.lourenco@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/org-rondon/vanilla-ssr-csr/issues"
+  },
+  "homepage": "https://github.com/org-rondon/vanilla-ssr-csr#readme",
+  "dependencies": {
+    "@babel/node": "7.8.4",
+    "body-parser": "1.19.0",
+    "compression": "1.7.4",
+    "cookie-parser": "1.4.4",
+    "cross-env": "7.0.0",
+    "dnscache": "1.0.2",
+    "ejs": "3.0.1",
+    "express": "4.17.1",
+    "newrelic": "6.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.8.4",
+    "@babel/preset-env": "7.8.4",
+    "babel-eslint": "10.0.3",
+    "eslint": "6.8.0",
+    "eslint-loader": "3.0.3",
+    "eslint-plugin-import": "2.20.1",
+    "eslint-plugin-prettier": "3.1.2",
+    "nodemon": "2.0.2",
+    "npm-run-all": "4.1.5",
+    "prettier": "1.19.1",
+    "release-it": "12.4.3",
+    "rimraf": "3.0.2"
+  }
+}
