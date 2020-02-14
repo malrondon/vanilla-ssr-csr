@@ -2,6 +2,13 @@
   "name": "vanilla-ssr-csr",
   "version": "0.0.0",
   "scripts": {
+    "start_dev": "./node_modules/.bin/cross-env NODE_ENV=development BABEL_ENV=development nodemon source/server/index.js",
+    "start:development": "npm run clean && npm run build:static && npm run build:client && npm run start_dev",
+    "clean": "./node_modules/.bin/rimraf 'dist'",
+    "prebuild": "npm run clean",
+    "build": "./node_modules/.bin/cross-env NODE_ENV=production BABEL_ENV=production run-p build:*",
+    "build:static": "./node_modules/.bin/cross-env BABEL_ENV=static ./node_modules/.bin/babel source/static --out-dir dist --copy-files",
+    "build:client": "./node_modules/.bin/cross-env BABEL_ENV=client ./node_modules/.bin/webpack --config ./internals/webpack/client.js",
     "release": "./node_modules/.bin/release-it --no-npm.publish --git.tagName='v${version}' --github.release"
   },
   "repository": {
@@ -16,6 +23,7 @@
   "homepage": "https://github.com/org-rondon/vanilla-ssr-csr#readme",
   "dependencies": {
     "@babel/node": "7.8.4",
+    "bluebird": "3.7.2",
     "body-parser": "1.19.0",
     "compression": "1.7.4",
     "cookie-parser": "1.4.4",
@@ -23,13 +31,17 @@
     "dnscache": "1.0.2",
     "ejs": "3.0.1",
     "express": "4.17.1",
-    "newrelic": "6.3.0"
+    "newrelic": "6.4.0",
+    "request": "2.88.2",
+    "request-promise": "4.2.5"
   },
   "devDependencies": {
     "@babel/cli": "7.8.4",
     "@babel/core": "7.8.4",
     "@babel/preset-env": "7.8.4",
+    "babel-core": "6.26.3",
     "babel-eslint": "10.0.3",
+    "babel-loader": "8.0.6",
     "eslint": "6.8.0",
     "eslint-loader": "3.0.3",
     "eslint-plugin-import": "2.20.1",
@@ -38,6 +50,9 @@
     "npm-run-all": "4.1.5",
     "prettier": "1.19.1",
     "release-it": "12.4.3",
-    "rimraf": "3.0.2"
+    "rimraf": "3.0.2",
+    "uglifyjs-webpack-plugin": "2.2.0",
+    "webpack": "4.41.5",
+    "webpack-cli": "3.3.11"
   }
 }

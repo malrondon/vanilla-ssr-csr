@@ -1,0 +1,9 @@
+{
+  "watch": [
+    "source/server",
+    "source/shared/views/index.html"
+  ],
+  "execMap": {
+    "js": "babel-node"
+  }
+}
