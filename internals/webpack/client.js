@@ -18,6 +18,7 @@ const config = {
     maxAssetSize: 400000,
   },
   entry: [
+    "@babel/polyfill",
     path.resolve(__dirname, `../../source/client`, 'index'),
   ],
   output: {
