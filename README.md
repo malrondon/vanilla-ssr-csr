@@ -1,12 +1,12 @@
 # Vanilla SSR and CSR
 
 [![licence mit](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](http://hemersonvianna.mit-license.org/)
-[![GitHub issues](https://img.shields.io/github/issues/org-rondon/vanilla-ssr-csr.svg)](https://github.com/org-rondon/vanilla-ssr-csr/issues)
-![GitHub package.json version](https://img.shields.io/github/package-json/v/org-rondon/vanilla-ssr-csr.svg)
-![GitHub Release Date](https://img.shields.io/github/release-date/org-rondon/vanilla-ssr-csr.svg)
-![GitHub top language](https://img.shields.io/github/languages/top/org-rondon/vanilla-ssr-csr.svg)
-![GitHub repo size](https://img.shields.io/github/repo-size/org-rondon/vanilla-ssr-csr.svg)
-![GitHub All Releases](https://img.shields.io/github/downloads/org-rondon/vanilla-ssr-csr/total.svg)
+[![GitHub issues](https://img.shields.io/github/issues/malrondon/vanilla-ssr-csr.svg)](https://github.com/malrondon/vanilla-ssr-csr/issues)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/malrondon/vanilla-ssr-csr.svg)
+![GitHub Release Date](https://img.shields.io/github/release-date/malrondon/vanilla-ssr-csr.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/malrondon/vanilla-ssr-csr.svg)
+![GitHub repo size](https://img.shields.io/github/repo-size/malrondon/vanilla-ssr-csr.svg)
+![GitHub All Releases](https://img.shields.io/github/downloads/malrondon/vanilla-ssr-csr/total.svg)
 
 ## Prerequisites
 
@@ -47,7 +47,7 @@ Questions and answers:
 
 ## Log
 
-Check [Releases](https://github.com/org-rondon/vanilla-ssr-csr/releases) for detailed changelog.
+Check [Releases](https://github.com/malrondon/vanilla-ssr-csr/releases) for detailed changelog.
 
 ## License
 
